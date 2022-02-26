@@ -1,0 +1,223 @@
+body {
+
+}
+
+.flexOuterCenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flexOuterSpace {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.relShell {
+  position: relative;
+  padding: 1em;
+}
+
+.closeModal {
+  position: absolute;
+  font-size: 30px;
+  right: -5%;
+  top: -5%;
+  cursor: pointer;
+}
+
+.iconShell {
+  font-size: 30px;
+  color: white;
+  padding: 0.75em 1.5em;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.setCard {
+  border: 1.5px solid darkgrey;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.33em;
+  margin: 0 0.33em 0.66em 0.33em;
+  font-size: 30px;
+  font-family: courier;
+  min-width: 70px;
+  max-width: 70px;
+  min-height: 60px;
+  max-height: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.selected {
+  background-color: cornflowerblue;
+  opacity: 0.4;
+}
+
+.modal {
+  background-color: black;
+  border-radius: 2px;
+  color: white;
+  opacity: 0.65;
+  padding: 1em 2em 2em 2em;
+  position: absolute;
+  font-size: 24px;
+  font-family: courier;
+  letter-spacing: 4px;
+  top: 20%;
+  display: none;
+  z-index: 22;
+}
+
+#appShell {
+  position: relative;
+}
+
+#headband {
+  padding: 0.25em;
+  position: fixed;
+  background-color: black;
+  width: 103%;
+  left: -3%;
+  top: 0%;
+  opacity: 0.45;
+}
+
+#app {
+  width: 100%;
+  padding-top: 7.5em;
+}
+
+
+@media only screen and (min-width: 560px) {
+  #app {
+    padding-top: 0.33em;
+    z-index:11;
+    width: 90%;
+  }
+
+  .iconShell {
+    font-size: 30px;
+    color: black;
+    padding: 4em 0.25em 0 0.25em;
+  }
+
+  #headband {
+    padding: 0.25em;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    opacity: 0.45;
+    z-index: 10
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .iconShell {
+    padding-top: 5em;
+  }
+
+  #settingsShell {
+    padding-left: 0.75em;
+  }
+
+  #addRowShell {
+    padding-right: 1em;
+  }
+
+  .setCard {
+    min-width: 90px;
+    max-width: 90px;
+  }
+
+  #app {
+    padding-top: 2em;
+  }
+}
+
+@media only screen and (min-width: 812px) {
+  .iconShell {
+    font-size: 30px;
+    color: black;
+  }
+
+  .setCard {
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  #app {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .iconShell {
+    font-size: 30px;
+    padding: 0.75em 1.75em;
+  }
+
+  .setCard {
+    min-width: 120px;
+    max-width: 120px;
+  }
+
+  #app {
+    width: 65%;
+    padding-top: 9em;
+    z-index:9;
+  }
+
+  #headband {
+    padding: 0.25em;
+    width: 100%;
+    left: 0%;
+    justify-content: space-around;
+
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .iconShell {
+    font-size: 30px;
+    padding: 0.75em 1.75em;
+  }
+
+  .setCard {
+    min-width: 120px;
+    max-width: 120px;
+  }
+
+  #app {
+    padding-top: 9em;
+    z-index:9;
+  }
+
+  #headband {
+    padding: 0.25em;
+    width: 100%;
+    left: 0%;
+  }
+}
+
+
+@media only screen and (min-width: 1190px) {
+  #app {
+    width: 63%;
+  }
+}
+
+@media only screen and (min-width: 1230px) {
+  #app {
+    width: 52%;
+  }
+}
+
+#appModals {
+}
